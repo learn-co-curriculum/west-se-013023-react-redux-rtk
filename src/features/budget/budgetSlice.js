@@ -9,9 +9,12 @@ const budgetSlice = createSlice({
     reducers: {
         addTen(state) {
             state.value += 10
+        },
+        subtractAmount(state, action) {
+            state.value -= action.payload
         }
     }
 })
 
-export const { addTen } = budgetSlice.actions
+export const { addTen, subtractAmount } = budgetSlice.actions
 export default budgetSlice.reducer

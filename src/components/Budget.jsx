@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import {addTen} from '../features/budget/budgetSlice'
+import {addTen, subtractAmount} from '../features/budget/budgetSlice'
 
 export default function Budget() {
 
@@ -14,7 +14,7 @@ export default function Budget() {
     }
 
     function handleSubtractFive(){
-
+        dispatch(subtractAmount(5))
     }
 
     return (

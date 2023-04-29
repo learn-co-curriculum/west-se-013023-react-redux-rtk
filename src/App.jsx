@@ -1,5 +1,6 @@
 import Budget from './components/Budget'
 import PetBrowser from './components/PetBrowser'
+import DogBrowser from "./components/DogBrowser";
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <h1>Redux Pet Shelter</h1>
         <Budget />
         <PetBrowser />
+        <DogBrowser />
       </header>
     </div>
   )
